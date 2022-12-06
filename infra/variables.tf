@@ -15,7 +15,7 @@ variable "client_id_list" {
 variable "repo_name" {
   type    = string
   # Example: Jareechang/astro-aws-starter
-  default = "Jareechang/static-site-astro-aws-ci-cd"
+  default = "Jareechang/astro-cloudfront-integration"
 }
 
 variable "cf_price_class" {
