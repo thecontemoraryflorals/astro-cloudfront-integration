@@ -89,6 +89,15 @@ data "aws_iam_policy_document" "github_actions" {
       "${aws_s3_bucket.site_asset_bucket.arn}/*"
     ]
   }
+  statement {
+    actions = [
+      "cloudfront:CreateInvalidation"
+    ]
+    effect = "Allow"
+    resources = [
+      aws_cloudfront_distribution.cf_distribution.arn
+    ]
+  }
 }
 
 resource "aws_iam_role_policy" "github_actions" {

@@ -2,8 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.tsx';
 
-console.log("api key: ", import.meta.env.UNSPLASH_API_KEY);
-
 const requestUrl = 'https://api.unsplash.com/search/photos?page=1&per_page=15&query=dogs';
 const response = await fetch(requestUrl, {
   headers: {

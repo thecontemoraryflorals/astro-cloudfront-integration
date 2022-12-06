@@ -30,3 +30,4 @@ jobs:
         env:
           AWS_S3_BUCKET_NAME: ${{ secrets.AWS_S3_BUCKET_NAME }}
           UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
+          AWS_DISTRIBUTION_ID: ${{ secrets.AWS_DISTRIBUTION_ID }}
